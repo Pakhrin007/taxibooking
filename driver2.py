@@ -10,8 +10,7 @@ class driver2_form:
         self.root.title("Taxi Booking")
         self.root.geometry("1100x600+100+25")
         self.root.resizable(0, 0)
-        self.root.config(bg="white")
-        
+        self.root.config(bg="#1F5776")
         self.id=id
         
 
@@ -32,25 +31,25 @@ class driver2_form:
         
 
     def customerform(self):
-        options_frame = Frame(self.root, bg='grey')
+        options_frame = Frame(self.root, bg="#E9ECEE")
 
         home4_btn = Button(options_frame, text="Home", font=('bold', 15),
-                           fg="firebrick1", bd=0, bg="grey", cursor="hand2", command=self.show_home)
+                           fg="firebrick1", bd=0,bg="#E9ECEE", cursor="hand2", command=self.show_home)
         home4_btn.place(x=25, y=150)
 
         home3_btn = Button(options_frame, text="Dashboard", font=('bold', 15),
-                           fg="firebrick1", bd=0, bg="grey", cursor="hand2", command=self.dashboard)
+                           fg="firebrick1", bd=0, bg="#E9ECEE", cursor="hand2", command=self.dashboard)
         home3_btn.place(x=25, y=230)
 
         home2_btn = Button(options_frame, text="profile", font=('bold', 15),
-                           fg="firebrick1", bd=0, bg="grey", cursor="hand2",command=self.profile_page)
+                           fg="firebrick1", bd=0, bg="#E9ECEE", cursor="hand2",command=self.profile_page)
         home2_btn.place(x=25, y=300)
 
 
     
 
         home_btn = Button(options_frame, text="logout", font=('bold', 15),
-                           fg="firebrick1", bd=0, bg="grey", cursor="hand2", command=self.logout)
+                           fg="firebrick1", bd=0, bg="#E9ECEE", cursor="hand2", command=self.logout)
         home_btn.place(x=25, y=370)
 
         options_frame.pack(side=LEFT)
